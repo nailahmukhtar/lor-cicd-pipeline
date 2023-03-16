@@ -5,7 +5,7 @@ function Character(character) {
   return (
     <div data-test="component-character">
         <h1 data-test="char-name">{character.name}</h1>
-        <img data-test="char-img">{character.imgUrl}</img>
+        <img data-test="char-img" src={character.imgUrl}/>
         <ul data-test="char-list">
             <li data-test="char-birth">Date of Birth: {character.birth}</li>
             <li data-test="char-death">Date of Death: {character.death}</li>
